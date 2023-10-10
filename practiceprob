@@ -17,6 +17,108 @@ def even():
       print(int(i),'is a even no')
     else:
       print()
-
 even()
 
+# Prog 3 - Sum of n terms
+
+def series():
+  sum= 0
+  n = int(input('enter integer'))
+  for i in range(1,n+1):
+    sum = i * str(n)
+    print(sum)
+series()
+
+# Prog 4 - Numbers with digit '3'
+
+def number():
+  count = 0
+  for i in range(1,10000):
+    if "3" in str(i):
+      count += 1
+  print(count)
+number()
+
+# prog 5 - Sum of digits
+
+def sumdig():
+  n = input('enter string')
+  sum = 0
+  for i in n:
+    sum = int(i) + sum
+  print(sum)
+sumdig()
+
+# prog 6 - palindrome checker
+
+def palindrome():
+  list1 = input(list())
+  if list1 == list1[::-1]:
+    print('it is a palindrome')
+  else:
+    print('not a palindrome')
+palindrome()
+
+# Prog 7 - Divisibility checker
+
+def multiplecheck():
+  n =int(input('enter no'))
+  if n%3 == 0 and n%5 == 0:
+    print('Fizzbuzz')
+  elif n%3 == 0:
+    print('Fizz')
+  elif n%5 == 0:
+    print('Buzz')
+  else:
+    print('not divisible by 3 or 5')
+multiplecheck()
+
+# Prog 8 - check prime no
+
+def primeno():
+  n = int(input('enter no'))
+  for i in range(2,13):
+    if n%i == 0:
+      return False
+    else:
+      return True
+primeno()
+
+# Prog 9 - prime no
+
+num = int(input("Enter a number: "))
+
+# If number is greater than 1
+if num > 1:
+   # Check if factor exist
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           break
+   else:
+       print(num,"is a prime number")
+
+# Else if the input number is less than or equal to 1
+else:
+   print(num,"is not a prime number")
+
+# prog 10 - factorial
+
+def factorial(n):
+  if n == 1:
+    return n
+  else:
+    return n * factorial(n - 1)
+factorial(5)
+
+# prog 11 - Anagram checker
+
+n = input('enter a string')
+x = input('enter another string')
+y = len(x)
+for i in range(0,y):
+  for j in range(0,y):
+    if n[i] == x[j]:
+      print('it is an anagram')
+    j = j + 1
+    i = i + 1
