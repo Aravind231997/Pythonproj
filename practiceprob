@@ -1,0 +1,22 @@
+# Prog 1 - Odd/even no
+
+def checker():
+  n = int(input('enter a no'))
+  if n%2 == 0:
+    print('no is even')
+  else:
+    print('no is odd')
+checker()
+
+# Prog 2 - Even no list
+
+def even():
+  n = int(input('enter last no'))
+  for i in range(2,n):
+    if i%2 == 0:
+      print(int(i),'is a even no')
+    else:
+      print()
+
+even()
+
